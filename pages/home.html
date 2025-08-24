@@ -10,30 +10,31 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Outfit:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <title>The Game</title>
+    <title>The Lobby</title>
 </head>
 
 <body>
     <nav>
         <h1>Stone Paper Scissors</h1>
     </nav>
-    <div class="main">
-        <p id="timer">10</p>
-        <div class="opp">
-            <img src="../public/images/Rock.png" height="100px">
-            <img src="../public/images/Paper.png" height="100px">
-            <img src="../public/images/Scissors.png" height="100px">
-        </div>
-        <div class="move">
-            <img class="oppmove" height="150px", width="150px">
-            <img class="plrmove" height="150px", width="150px">
-        </div>
-        <div class="plr">
-            <button class="rockbtn"></button>
-            <button class="paperbtn"></button>
-            <button class="scissorbtn"></button>
-        </div>
+
+    <h1 class="heading">Select Game</h1>
+
+    <div class="games">
+        <button onclick="window.location.href='computer.html'">Comupter</button>
+        <button id="2Player" onclick="togglePopup()">2 Players</button>
+        <button>3 Players</button>
+        <button>4 Players</button>
+        <button>5 Players (boht tem hai isko bnane me)</button>
+        <button>6 Players (shyad hi bnega)</button>
     </div>
+
+    <div id="popup">
+        <button onclick="togglePopup()">X</button>
+        <p>Abhi nhi bna hai ye</p>
+    </div>
+
+    <script src="../public/js/main.js"></script>
 </body>
-<script src="..public/js/script.js"></script>
 </html>
