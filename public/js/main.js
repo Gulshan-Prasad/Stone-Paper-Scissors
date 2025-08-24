@@ -1,1 +1,2 @@
-window.alert("linked")
+const plrmove = document.getElementById("plrmove")
+

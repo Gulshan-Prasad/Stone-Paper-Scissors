@@ -61,6 +61,7 @@ nav {
     background-size: cover;
     border: none;
     cursor: pointer;
+    transition: transform 0.1s ease;
 }
 
 .rockbtn:hover,
@@ -73,7 +74,8 @@ nav {
 .rockbtn:active,
 .paperbtn:active,
 .scissorbtn:active {
-    background-color: rgb(65, 90, 90);
+    transform: scale(0.8);
+    background-color: rgb(100, 136, 136);
     filter: brightness(50%);
 }
 
