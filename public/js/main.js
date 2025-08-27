@@ -4,15 +4,15 @@ const rock = document.getElementById("rockbtn")
 const paper = document.getElementById("paperbtn")
 const scissor = document.getElementById("scissorbtn")
 
-rock.onclick = function() {
+rock.onclick = function () {
     plrmove.src = "../public/images/Rock.png"
 }
 
-paper.onclick = function() {
+paper.onclick = function () {
     plrmove.src = "../public/images/Paper.png"
 }
 
-scissor.onclick = function() {
+scissor.onclick = function () {
     plrmove.src = "../public/images/Scissor.png"
 }
 
@@ -28,12 +28,13 @@ function toggleInstructions() {
     instructions.classList.toggle("active");
 }
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     if (document.title == "Computer") {
-        toggleInstructions()
+        let instructions = document.getElementById("instructions")
+        instructions.classList.add("active");
 
         setTimeout(() => {
-            toggleInstructions()
+            instructions.classList.remove("active");
         }, 5000);
     }
 });
