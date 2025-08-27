@@ -22,3 +22,18 @@ function togglePopup() {
     let popup = document.getElementById("popup")
     popup.classList.toggle("active");
 }
+
+function toggleInstructions() {
+    let instructions = document.getElementById("instructions")
+    instructions.classList.toggle("active");
+}
+
+window.addEventListener("load", function() {
+    if (document.title == "Computer") {
+        toggleInstructions()
+
+        setTimeout(() => {
+            toggleInstructions()
+        }, 5000);
+    }
+});
